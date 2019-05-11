@@ -14,7 +14,7 @@ def bksvd(tensor, k = 6, block_size = None, num_iter = 3):
     -------
     u : (M, k) array_like
     s : (k,) array_like
-    v : (k, N) array_like
+    vt : (k, N) array_like
 
     """
     if block_size is None:
