@@ -18,5 +18,5 @@ u, s, vt = bksvd(a, 20)
 
 # Check quality
 assert np.allclose(a, u @ np.diag(s) @ vt)
-print(np.linalg.norm(a - u @ np.diag(s) @ vt))
+print(np.linalg.norm(a - u @ np.diag(s) @ vt) / np.linalg.norm(a)
 ```
